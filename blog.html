@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LMB Marketing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-[#343434]">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-6">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center hover:opacity-80 transition-opacity">
+          <img src="img/LMK Marketing.png" alt="LMB Logo" class="h-10 w-auto" />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8 font-montserrat font-semibold">
+          <a href="index.html" class="px-3 py-2 text-sm transition-colors hover:text-[#2D89FF]">Home</a>
+          <a href="services.html" class="px-3 py-2 text-sm transition-colors hover:text-[#2D89FF]">Services</a>
+          <a href="about.html" class="px-3 py-2 text-sm transition-colors hover:text-[#2D89FF]">About</a>
+          <a href="portfolio.html" class="px-3 py-2 text-sm transition-colors hover:text-[#2D89FF]">Portfolio</a>
+          <a href="blog.html" class="px-3 py-2 text-sm transition-colors text-[#2D89FF] border-b-2 border-[#2D89FF]">Blog</a>
+          <a href="contact.html" class="px-3 py-2 text-sm transition-colors hover:text-[#2D89FF]">Contact</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden md:block">
+          <a href="#contact" class="bg-[#2D89FF] hover:bg-[#1e5fcc] text-white px-6 py-2 rounded-lg font-montserrat font-semibold">Book a Call</a>
+        </div>
+
+        <!-- Mobile Menu (icon only, no JS toggle here) -->
+        <div class="md:hidden">
+          <button class="text-[#343434] hover:text-[#2D89FF] p-2">
+            <!-- Menu icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ <!-- Header -->
+ <section class="bg-gradient-to-br from-[#CCE6FD] to-white py-16 text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-5xl font-bold text-[#343434] mb-6" style="font-family: Montserrat;">
+        Marketing Insights Blog
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto" style="font-family: Open Sans;">
+        Stay ahead of the curve with our latest insights, strategies, and tips for growing your business 
+        through effective marketing. Expert advice from our team of marketing professionals.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Post -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="inline-block bg-[#34C759] text-white px-4 py-2 mb-4 font-semibold" style="font-family: Montserrat;">Featured Article</span>
+        <h2 class="text-2xl font-bold text-[#343434]" style="font-family: Montserrat;">Editor's Pick</h2>
+      </div>
+
+      <div class="overflow-hidden shadow-xl border-0 max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <!-- Image -->
+          <div class="aspect-video lg:aspect-auto">
+            <img src="https://images.unsplash.com/photo-1730382624709-81e52dd294d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGdyb3d0aCUyMGNoYXJ0c3xlbnwxfHx8fDE3NTgxNDA0MDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
+                 alt="Featured Post" class="w-full h-full object-cover">
+          </div>
+          <!-- Content -->
+          <div class="p-8 flex flex-col justify-center">
+            <span class="inline-block bg-[#CCE6FD] text-[#2D89FF] mb-4 px-2 py-1 font-semibold" style="font-family: Montserrat;">
+              E-commerce
+            </span>
+            <h3 class="text-2xl font-bold text-[#343434] mb-4 leading-tight" style="font-family: Montserrat;">
+              10 Proven Strategies to Increase Your E-commerce Conversion Rate
+            </h3>
+            <p class="text-gray-600 mb-6 leading-relaxed" style="font-family: Open Sans;">
+              Discover the most effective techniques to turn more of your website visitors into paying customers with these conversion rate optimization strategies.
+            </p>
+
+            <div class="flex items-center justify-between mb-6 text-sm text-gray-500">
+              <div class="flex items-center space-x-4">
+                <!-- Author -->
+                <div class="flex items-center gap-1">
+                  <!-- User Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user w-4 h-4 mr-1" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  Sarah Johnson
+                </div>
+                <!-- Date -->
+                <div class="flex items-center gap-1">
+                  <!-- Calendar Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-1" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                  Jan 15, 2025
+                </div>
+              </div>
+              <!-- Read Time -->
+              <div class="flex items-center gap-1">
+                <!-- Clock Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 mr-1" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                8 min read
+              </div>
+            </div>
+
+
+            <button class="bg-[#2D89FF] hover:bg-[#1e5fcc] text-white px-6 py-3 inline-flex items-center gap-2 font-semibold" style="font-family: Montserrat;">
+              Read Article
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filter -->
+  <section class="py-10 bg-[#F8F6F0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center gap-3">
+        <button class="bg-[#2D89FF] hover:bg-[#1e5fcc] text-white px-4 py-2 font-semibold rounded">All</button>
+        <button class="border border-[#2D89FF] text-[#2D89FF] hover:bg-[#2D89FF] hover:text-white px-4 py-2 font-semibold rounded">E-commerce</button>
+        <button class="border border-[#2D89FF] text-[#2D89FF] hover:bg-[#2D89FF] hover:text-white px-4 py-2 font-semibold rounded">Lead Generation</button>
+        <button class="border border-[#2D89FF] text-[#2D89FF] hover:bg-[#2D89FF] hover:text-white px-4 py-2 font-semibold rounded">Social Media</button>
+        <button class="border border-[#2D89FF] text-[#2D89FF] hover:bg-[#2D89FF] hover:text-white px-4 py-2 font-semibold rounded">Web Design</button>
+        <button class="border border-[#2D89FF] text-[#2D89FF] hover:bg-[#2D89FF] hover:text-white px-4 py-2 font-semibold rounded">Public Relations</button>
+        <button class="border border-[#2D89FF] text-[#2D89FF] hover:bg-[#2D89FF] hover:text-white px-4 py-2 font-semibold rounded">Paid Advertising</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Posts Grid -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Repeat this card for each post -->
+        <div class="overflow-hidden shadow-lg hover:shadow-xl transition-shadow group">
+          <div class="aspect-video relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJrZXRpbmclMjBkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzU4MjI3Nzk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Post" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6">
+            <span class="inline-block bg-[#CCE6FD] text-[#2D89FF] mb-3 px-2 py-1 font-semibold">Lead Generation</span>
+            <h3 class="text-xl font-bold text-[#343434] mb-4 group-hover:text-[#2D89FF] transition-colors">The Complete Guide to B2B Lead Generation in 2025</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">Learn the latest B2B lead generation strategies that are driving results in 2025, from LinkedIn campaigns to content marketing.</p>
+            <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+              <!-- Author -->
+              <div class="flex items-center gap-1">
+                <!-- User Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user w-4 h-4 mr-1" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Michael Chen
+              </div>
+              <!-- Read Time -->
+              <div class="flex items-center gap-1">
+                <!-- Clock Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 mr-1" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                12 min read
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <!-- Date -->
+              <span class="flex items-center gap-1 text-gray-500 text-sm">
+                <!-- Calendar Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7H3v12a2 2 0 002 2z"/>
+                </svg>
+                Jan 12, 2025
+              </span>
+
+              <!-- Read More Button -->
+              <button class="text-[#2D89FF] hover:text-[#1e5fcc] font-semibold inline-flex items-center gap-1">
+                Read More
+                <!-- ArrowRight Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M13 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <!-- Repeat other cards similarly -->
+      </div>
+
+      <div class="text-center mt-12">
+        <button class="border border-[#2D89FF] text-[#2D89FF] hover:bg-[#2D89FF] hover:text-white px-8 py-3 font-semibold rounded">
+          Load More Articles
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="py-20 bg-[#2D89FF]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6" style="font-family: Montserrat;">Stay Updated with Marketing Insights</h2>
+      <p class="text-xl text-white mb-8" style="font-family: Open Sans;">Get the latest marketing tips, strategies, and industry insights delivered to your inbox.</p>
+      <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-[#34C759]" style="font-family: Open Sans;">
+        <button class="bg-[#34C759] hover:bg-[#28a745] text-white px-6 py-3 font-semibold" style="font-family: Montserrat;">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer (HTML + Tailwind) -->
+<footer class="bg-[#343434] text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Company Info -->
+      <div class="space-y-4">
+        <!-- Replace the src with your local logo path -->
+        <img src="img/LMK Marketing White.png" alt="LMB Marketing" class="h-15 w-auto" />
+
+        <p class="text-gray-300 leading-relaxed">
+          Your all-in-one marketing partner. From paid media to PR, we build your growth engine.
+        </p>
+
+        <div class="flex space-x-4">
+          <!-- Facebook -->
+          <a href="#" aria-label="Facebook" class="text-gray-300 hover:text-[#2D89FF] transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+
+          <!-- Twitter -->
+          <a href="#" aria-label="Twitter" class="text-gray-300 hover:text-[#2D89FF] transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+          </a>
+
+          <!-- Linkedin -->
+          <a href="#" aria-label="LinkedIn" class="text-gray-300 hover:text-[#2D89FF] transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="#" aria-label="Instagram" class="text-gray-300 hover:text-[#2D89FF] transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-semibold mb-4" style="font-family: Montserrat; font-weight: 600;">
+          Quick Links
+        </h4>
+        <ul class="space-y-2">
+          <li><a href="#home" class="text-gray-300 hover:text-[#2D89FF] transition-colors text-sm">Home</a></li>
+          <li><a href="#services" class="text-gray-300 hover:text-[#2D89FF] transition-colors text-sm">Services</a></li>
+          <li><a href="#about" class="text-gray-300 hover:text-[#2D89FF] transition-colors text-sm">About</a></li>
+          <li><a href="#portfolio" class="text-gray-300 hover:text-[#2D89FF] transition-colors text-sm">Portfolio</a></li>
+          <li><a href="#blog" class="text-gray-300 hover:text-[#2D89FF] transition-colors text-sm">Blog</a></li>
+          <li><a href="#contact" class="text-gray-300 hover:text-[#2D89FF] transition-colors text-sm">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="font-semibold mb-4" style="font-family: Montserrat; font-weight: 600;">
+          Services
+        </h4>
+        <ul class="space-y-2">
+          <li><span class="text-gray-300 text-sm">Paid Media</span></li>
+          <li><span class="text-gray-300 text-sm">Lead Generation</span></li>
+          <li><span class="text-gray-300 text-sm">Web Development</span></li>
+          <li><span class="text-gray-300 text-sm">PR &amp; Media</span></li>
+          <li><span class="text-gray-300 text-sm">Social Media</span></li>
+          <li><span class="text-gray-300 text-sm">Graphic Design</span></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h4 class="font-semibold mb-4" style="font-family: Montserrat; font-weight: 600;">
+          Contact Us
+        </h4>
+        <div class="space-y-3">
+          <div class="flex items-center space-x-3">
+            <!-- Mail icon (outline) -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-[#2D89FF]" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+            <span class="text-gray-300 text-sm">hello@lmbmarketing.com</span>
+          </div>
+
+          <div class="flex items-center space-x-3">
+            <!-- Phone icon (simplified lucide) -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-[#2D89FF]" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+            <span class="text-gray-300 text-sm">+1 (555) 123-4567</span>
+          </div>
+
+          <div class="flex items-center space-x-3">
+            <!-- Map pin -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-[#2D89FF]" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span class="text-gray-300 text-sm">New York, NY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-600 pt-8 mt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">© 2025 LMB Marketing. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 hover:text-[#2D89FF] text-sm transition-colors">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-[#2D89FF] text-sm transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
