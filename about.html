@@ -41,15 +41,91 @@
           <a href="#contact" class="bg-[#2D89FF] hover:bg-[#1e5fcc] text-white px-6 py-2 rounded-lg font-montserrat font-semibold">Book a Call</a>
         </div>
 
-        <!-- Mobile Menu (icon only, no JS toggle here) -->
-        <div class="md:hidden">
-          <button class="text-[#343434] hover:text-[#2D89FF] p-2">
-            <!-- Menu icon -->
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
-        </div>
+<!-- Mobile Menu Button (replace your current md:hidden block with this) -->
+<div class="md:hidden">
+  <button id="menu-btn" class="text-[#343434] hover:text-[#2D89FF] p-2" aria-label="Open menu" type="button">
+    <!-- Hamburger icon -->
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </button>
+</div>
+
+<!-- Fullscreen Mobile Navigation Menu (add this after the header) -->
+<div id="mobile-menu" class="hidden fixed inset-0 bg-white z-[9999] flex flex-col items-center justify-center space-y-6 font-montserrat font-semibold text-xl md:hidden" role="dialog" aria-modal="true" aria-hidden="true">
+  <!-- Close Button (top-right) -->
+  <button id="mobile-close" class="absolute top-5 right-5 text-[#343434] hover:text-[#2D89FF] p-2" aria-label="Close menu" type="button">
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+    </svg>
+  </button>
+
+  <a href="index.html" class="block px-4 py-2 text-gray-800 hover:text-[#2D89FF]" data-mobile-link>Home</a>
+  <a href="services.html" class="block px-4 py-2 text-gray-800 hover:text-[#2D89FF]" data-mobile-link>Services</a>
+  <a href="about.html" class="block px-4 py-2 text-[#2D89FF]" data-mobile-link>About</a>
+  <a href="portfolio.html" class="block px-4 py-2 text-gray-800 hover:text-[#2D89FF]" data-mobile-link>Portfolio</a>
+  <a href="blog.html" class="block px-4 py-2 text-gray-800 hover:text-[#2D89FF]" data-mobile-link>Blog</a>
+  <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:text-[#2D89FF]" data-mobile-link>Contact</a>
+
+  <a href="#contact" class="block bg-[#2D89FF] hover:bg-[#1e5fcc] text-white px-8 py-3 rounded-lg mt-4" data-mobile-link>Book a Call</a>
+</div>
+
+<!-- JavaScript (place this right after the mobile menu markup or at bottom of body) -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-close');
+    const mobileLinks = mobileMenu.querySelectorAll('[data-mobile-link]');
+
+    function openMenu() {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      // prevent background scroll:
+      document.documentElement.classList.add('overflow-hidden');
+      document.body.classList.add('overflow-hidden');
+      // optional: set focus to first link for accessibility
+      const firstLink = mobileMenu.querySelector('[data-mobile-link]');
+      if (firstLink) firstLink.focus();
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.documentElement.classList.remove('overflow-hidden');
+      document.body.classList.remove('overflow-hidden');
+      // return focus to menu button
+      menuBtn.focus();
+    }
+
+    menuBtn.addEventListener('click', openMenu);
+    mobileClose.addEventListener('click', closeMenu);
+
+    // Close when any mobile link is clicked (so menu closes and navigation continues)
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeMenu();
+      });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+        closeMenu();
+      }
+    });
+
+    // Optional: close when clicking outside menu content (click on overlay)
+    mobileMenu.addEventListener('click', (e) => {
+      // if clicked directly on overlay (not on a child link)
+      if (e.target === mobileMenu) {
+        closeMenu();
+      }
+    });
+  });
+</script>
+
+
       </div>
     </div>
   </header>
